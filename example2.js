@@ -27,7 +27,8 @@ var Log = {
 
 
 function init(){
-    //A client-side tree generator
+
+	//A client-side tree generator
     var getTree = (function() {
         var i = 0;
         return function(nodeId, level) {
@@ -72,15 +73,18 @@ function init(){
     //Create a new ST instance
     var st = new $jit.ST({
         'injectInto': 'infovis',
+	orientation: 'top',
+	subtreeOffset: 1,
+	siblingOffset: 100,
         //set duration for the animation
-        duration: 800,
+        duration: 600,
         //set animation transition type
         transition: $jit.Trans.Quart.easeInOut,
         //set distance between node and its children
-        levelDistance: 50,
+        levelDistance: 120,
         //set max levels to show. Useful when used with
         //the request method for requesting trees of specific depth
-        levelsToShow: 2,
+        levelsToShow: 1,
         //set node and edge styles
         //set overridable=true for styling individual
         //nodes or edges

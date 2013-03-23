@@ -1,21 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Spacetree - SpaceTree with on-demand nodes</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Spacetree of research facilities</title>
 
-<!-- CSS Files -->
-<link type="text/css" href="base.css" rel="stylesheet" />
-<link type="text/css" href="Spacetree.css" rel="stylesheet" />
+	<link type="text/css" href="base.css" rel="stylesheet" />
+	<link type="text/css" href="Spacetree.css" rel="stylesheet" />
 
-<!--[if IE]><script language="javascript" type="text/javascript" src="../../Extras/excanvas.js"></script><![endif]-->
+	<script language="javascript" type="text/javascript" src="jit.js"></script>
 
-<!-- JIT Library File -->
-<script language="javascript" type="text/javascript" src="jit-yc.js"></script>
-
-<!-- Example File -->
-<script language="javascript" type="text/javascript" src="data.js"></script>
-<script language="javascript" type="text/javascript" src="example2.js"></script>
+	<script language="javascript" type="text/javascript" src="data.js"></script>
+	<script language="javascript" type="text/javascript" src="example2.js"></script>
 </head>
 
 <body onload="init();">
@@ -55,7 +52,7 @@ SpaceTree with on-demand nodes
             <label for="r-left">left </label>
         </td>
         <td>
-            <input type="radio" id="r-left" name="orientation" checked="checked" value="left" />
+            <input type="radio" id="r-left" name="orientation" value="left" />
         </td>
     </tr>
     <tr>
@@ -63,7 +60,7 @@ SpaceTree with on-demand nodes
             <label for="r-top">top </label>
          </td>
          <td>
-            <input type="radio" id="r-top" name="orientation" value="top" />
+            <input type="radio" id="r-top" name="orientation" value="top" checked />
          </td>
     <tr>
          <td>
@@ -88,4 +85,5 @@ SpaceTree with on-demand nodes
 <div id="log"></div>
 </div>
 </body>
+
 </html>
